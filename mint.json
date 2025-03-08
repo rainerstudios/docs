@@ -1,91 +1,165 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Your Documentation",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#0ea5e9",
+    "background": {
+      "dark": "#0f172a"
+    },
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#0d9488",
+      "to": "#2563eb"
     }
   },
+  "backgroundImage": "/images/background.png",
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Community",
+      "url": "https://your-community-url.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Sign up",
+    "url": "https://your-signup-url.com"
   },
   "tabs": [
     {
+      "name": "Guides",
+      "url": "guides"
+    },
+    {
+      "name": "AI Chat",
+      "url": "ai-chat"
+    },
+    {
       "name": "API Reference",
       "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Knowledge Base",
+      "url": "knowledge-base"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "SDK Library",
+      "url": "sdk-library"
+    },
+    {
+      "name": "Changelog",
+      "url": "changelog"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "getting-started/introduction",
+        "getting-started/installation",
+        "getting-started/quickstart"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Components",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "components/overview",
+        "components/ui-elements",
+        "components/logic"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Data Sources",
       "pages": [
-        "api-reference/introduction"
+        "data-sources/overview",
+        "data-sources/spreadsheets",
+        "data-sources/databases"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Security",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "security/overview",
+        "security/authentication",
+        "security/encryption"
+      ]
+    },
+    {
+      "group": "Publishing",
+      "pages": [
+        "publishing/overview",
+        "publishing/platforms",
+        "publishing/deployment"
+      ]
+    },
+    {
+      "group": "Accounts",
+      "pages": [
+        "accounts/overview",
+        "accounts/authentication",
+        "accounts/authorization"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
-  }
+    "twitter": "https://twitter.com/your-handle",
+    "github": "https://github.com/your-repo",
+    "linkedin": "https://linkedin.com/company/your-company"
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-XXXXXXXXXX"
+    }
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
+  },
+  "search": {
+    "prompt": "Search for articles..."
+  },
+  "integrations": {
+    "intercom": "YOUR_INTERCOM_APP_ID"
+  },
+  "welcomeMessage": "Hey James, how can we help you?",
+  "featuredLinks": [
+    {
+      "title": "Getting Started",
+      "description": "Learn to build modern documentations in minutes",
+      "icon": "rocket",
+      "url": "/getting-started/introduction"
+    },
+    {
+      "title": "Components",
+      "description": "Use pre-built UI & logic for interactive apps.",
+      "icon": "puzzle-piece",
+      "url": "/components/overview"
+    },
+    {
+      "title": "Data sources",
+      "description": "Connect to spreadsheets, databases & more.",
+      "icon": "database",
+      "url": "/data-sources/overview" 
+    },
+    {
+      "title": "Security",
+      "description": "Implement robust measures to protect your app.",
+      "icon": "shield",
+      "url": "/security/overview"
+    },
+    {
+      "title": "Publishing",
+      "description": "Deploy seamlessly across platforms & devices.",
+      "icon": "paper-plane",
+      "url": "/publishing/overview"
+    },
+    {
+      "title": "Accounts",
+      "description": "Manage user authentication & authorization.",
+      "icon": "user",
+      "url": "/accounts/overview"
+    }
+  ]
 }
